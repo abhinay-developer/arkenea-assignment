@@ -1,0 +1,44 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png');
+    background-size: cover;
+  }
+  .mat-mdc-card-avatar {
+    height: 84px;
+    width: 84px;
+    border-radius: 98%;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+.mat-header{
+    background-color: #efe6e6;
+}
+
+.label-heading{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.label-content{
+    margin-top: 10px;
+
+}
+
+
+mat-label{
+  color: red;
+}
+
+.mat-card{
+  border: 1px solid #d5c3c3 ;
+  margin: 20px;
+
+}

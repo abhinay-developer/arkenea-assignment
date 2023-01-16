@@ -1,0 +1,71 @@
+<app-toolbar></app-toolbar>
+<div fxLayout="row wrap">
+    <div fxLayout="column">
+        <mat-card class="example-card" [style.marginLeft.px]="50" [style.marginTop.px]="50" [style.height.px]="336">
+            <mat-card-header fxLayout="column" fxLayoutAlign="center center">
+                <div mat-card-avatar class="example-header-image"></div>
+                <div>
+                    <mat-card-title>John Smith</mat-card-title>
+                </div>
+                <div>CFA ,CIC</div>
+                <div>Premium Member</div>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    Insurance Agent,Attorney,
+                    Accountant
+                </p>
+            </mat-card-content>
+            <hr>
+            <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+                <button mat-icon-button class="example-icon favorite-icon"
+                    aria-label="Example icon-button with heart icon">
+                    <mat-icon color="warn">email</mat-icon> 
+                </button><mat-label fxLayout="row" >Send an Email</mat-label>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div fxLayout="column" style="width: 60%;">
+        <mat-card [style.marginTop.px]="50" [style.marginLeft.px]="50" [style.minHeight.px]="300">
+            <mat-card-header class="mat-header">
+                <div fxLayout="row wrap">
+                    <mat-card-title>
+                        <div>Bussiness Details</div>
+                    </mat-card-title>
+                </div>
+            </mat-card-header>
+            <mat-card-content class="mat-card">
+                <div >
+                    <div fxLayout="row wrap" fxLayoutAlign="space-between">
+                        <div> <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                                <mat-icon color="accent">person</mat-icon>
+                        
+                            </button></div>
+                            <div class="edit" > <button mat-icon-button class="example-icon"
+                                aria-label="Example icon-button with menu icon" (click)="openDialog()">
+                                <mat-icon color="accent">edit</mat-icon>
+                            </button></div>
+                    </div>
+                    <div fxLayout="row wrap">
+                        <div fxLayout="column" fxFlex="30%">
+                            <label class="label-heading">Name:</label>
+                            <label class="label-heading">Domain:</label>
+                            <label class="label-heading">Gender:</label>
+                            <label class="label-heading">Date Of Birth:</label>
+                            <label class="label-heading">Phone Number:</label>
+                            <label class="label-heading">Location:</label>
+                        </div>
+                        <div fxLayout="column" fxFlex="25%">
+                            <label class="label-content">Mary Janson</label>
+                            <label class="label-content">Domain:</label>
+                            <label class="label-content">Male</label>
+                            <label class="label-content">8th June 1979</label>
+                            <label class="label-content">8654321234</label>
+                            <label class="label-content">12th Street Silicon Valley</label>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
